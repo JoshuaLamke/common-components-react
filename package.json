@@ -19,9 +19,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "lint-staged && react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "prepare": "husky install"
+
   },
   "lint-staged": {
     "*.tsx|*.ts": "eslint --fix" 
